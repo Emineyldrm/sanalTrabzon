@@ -1,0 +1,105 @@
+/*Ortak olanlar*/
+/*
+Renkler açıktan koyuya 
+F8F0E5 
+EADBC8
+DAC0A3
+102C57
+*/
+.navbar {
+  background: #102c57; /*d4a373 */
+}
+body {
+  background-color: #dac0a3; /*  F8F0E5*/
+}
+/*Anasayfa için olanlar*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #eadbc8;
+}
+.card-img-top {
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.card-text {
+  font-size: 0.875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*Mekanlar için olanlar*/
+
+.sag-taraf {
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sol-taraf {
+  float: left;
+}
+.renk-id {
+  color: #070000 !important;
+  font-weight: bold;
+}
+.ses-renk {
+  color: #264653;
+}
+.alt {
+  /*width: 1000px;  Kart genişliği */
+  width: 83.33%;
+  /*height: 200px;  Kart yüksekliği */
+  margin: 0 auto;
+  padding: 20px; /* İçeriğin kart içindeki boşlukları */
+  border: 1px solid #ccc; /* Kartın kenarlık rengi */
+  border-radius: 10px; /* Kartın köşe yuvarlatması */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  background-color: #eadbc8;
+}
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+/*.slide{
+     // width: 83.33%; 
+     // width: 578px; 
+     height: 210px;
+     margin: 0 auto;
+     margin-bottom: 20px;
+ }*/
+.carousel-item img {
+  width: 100%; /* Resimleri genişliğe sığdır */
+  height: 100%; /* Oranları koru */
+  object-fit: cover; /* Gerekirse resimleri kapla */
+  /*  object-fit:contain;*/
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+.carousel-slide {
+  flex: 0 0 auto;
+}
